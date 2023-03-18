@@ -1,0 +1,11 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrideMountainGoap.Windows", "StrideMountainGoap.Windows\StrideMountainGoap.Windows.csproj", "{E080B632-708A-4549-94B7-E9A6A0F8660D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrideMountainGoap", "StrideMountainGoap\StrideMountainGoap.csproj", "{62C03DAF-2EDA-4B38-9A4F-85E48401D051}"
+EndProject
+Global
+EndGlobal

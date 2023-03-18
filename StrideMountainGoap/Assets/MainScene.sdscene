@@ -1,0 +1,311 @@
+!SceneAsset
+Id: 6fac61ef-8d26-443f-a5a3-fbea96e81392
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 3bb7a26a-4aa0-49cc-bd01-5d760b18a60d
+        - ref!! a6542201-b452-4b6f-9340-5a70fda4f87d
+        - ref!! 0f67b56e-94b6-4681-9f44-135d461f16a4
+        - ref!! f725321c-08e9-4c83-bf57-0da678b5f26f
+        - ref!! 7f6fbbd1-1748-4327-aa81-fd6b99bfe609
+        - ref!! 7fbc3ba7-a35c-4e58-ac20-8381333ef140
+        - ref!! 8b10ae16-8d45-4cb0-bfc6-19cabb326367
+        - ref!! b5930139-f098-4151-ba28-d30e6e3faed2
+        - ref!! c6564ee3-f810-4c0c-b2f8-2438d63481ae
+    Parts:
+        -   Entity:
+                Id: 0f67b56e-94b6-4681-9f44-135d461f16a4
+                Name: Skybox
+                Components:
+                    b76004f1646b95c6fa798976f498e00d: !TransformComponent
+                        Id: 653868e6-e428-44c5-b126-e49ac97fda7a
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    c087bd78ce837a693b39f579dd1f7d86: !BackgroundComponent
+                        Id: 9b446431-2401-46d2-b142-b70414492747
+                        Texture: 6fc5c391-8674-42fe-94ce-557384947f7c:Skybox texture
+                    bf26b9811be9fdb8aa750003c45f3883: !LightComponent
+                        Id: 6731f841-4fb4-4864-9c9f-f24c90978d8e
+                        Type: !LightSkybox
+                            Skybox: 92545a70-d0df-4b1a-9058-d946e40055dd:Skybox
+        -   Folder: Actions
+            Entity:
+                Id: 22a13d0d-c745-4dc3-a384-5ca3137786c0
+                Name: GetAxeAction
+                Components:
+                    b1fd5ee32614ee3cefc15fe301ec25a1: !TransformComponent
+                        Id: b48e1fa7-9c79-4bb2-8c2a-943d16c6c0c4
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    63dd86d7c47ebe020df70cebf89a5f4d: !StrideMountainGoap.Code.NPC.Actions.GetAxeAction,StrideMountainGoap
+                        Id: c3e79ffb-6cc4-4a32-aa16-3e3b6ec36dfd
+                        NameOfAction: GetAxeAction
+                        Cost: 1
+                        Preconditions:
+                            ebf217af990bb843995213ed5a0747be~IsCloseToTarget: true
+                            ff3c9a58ab68a64188214ba72113ca77~HasAxe: false
+                        Postconditions:
+                            2e627713842637fa2a7bea48665c9da4~IsCloseToTarget: false
+                            cc3190592fa491f8fbf55e9de6f7d908~HasAxe: true
+                        AxeLocation: ref!! b5930139-f098-4151-ba28-d30e6e3faed2
+                        Move: ref!! a4c34c8c-a48f-4f32-a299-f9bac07bb7ad
+        -   Entity:
+                Id: 23622bd2-9fe3-46ca-abf9-25967a51bc07
+                Name: Cube
+                Components:
+                    82795db629bf4ad728749a8c6a6bee31: !TransformComponent
+                        Id: eb701db8-393e-40a2-a997-a59045a17fd8
+                        Position: {X: 0.0, Y: 1.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.3, Y: 3.0, Z: 0.3}
+                        Children: {}
+                    4a32ff480642714bf1f72f8f08f2ec37: !ModelComponent
+                        Id: e81c3ae5-e86e-4cf4-8a82-dde65fd9024a
+                        Model: 50ed78b5-56c5-42c5-a3dd-f37500df8363:Cube
+                        Materials: {}
+        -   Entity:
+                Id: 28f7f28e-acd2-4e4e-ae93-84c547a4d295
+                Name: Sphere
+                Components:
+                    3da2a7c21521764c537b4aa1f4c3a2d0: !TransformComponent
+                        Id: e56812aa-0d68-45ff-976d-66d7cb5b5962
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2066d1fcd832e426fdf184c43f2febba: !ModelComponent
+                        Id: d2b3e388-7250-42a5-b603-89d3a6d6147c
+                        Model: b383864d-2a92-4504-89cf-085b2aae3d76:Sphere
+                        Materials: {}
+        -   Entity:
+                Id: 3bb7a26a-4aa0-49cc-bd01-5d760b18a60d
+                Name: Camera
+                Components:
+                    2ea1a86da32769b61f926c8c27d12f92: !TransformComponent
+                        Id: df7af816-b257-4c71-9470-dacfef46901d
+                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.82903755, Z: 0.0, W: 0.5591929}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    756eec6be5fcf77dc36a3cf3adf0b2ad: !CameraComponent
+                        Id: b9ca80e4-de10-48a7-b0d7-0044dcc5f45c
+                        Name: null
+                        Projection: Perspective
+                        Slot: fe8e0cfc-d3e2-4e45-8ae8-5c58dd52cfa6
+                    d1d83032a30422694242d54a3e6fed81: !StrideMountainGoap.BasicCameraController,StrideMountainGoap
+                        Id: e24d7eda-9e71-4130-b8f0-ea58da0e4b3e
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Folder: Actions
+            Entity:
+                Id: 62610fac-6182-44cf-9ae7-e68b2ee2403c
+                Name: GetWoodAction
+                Components:
+                    54a748841f2f8d24c0f54b99c19d6f90: !TransformComponent
+                        Id: c4ad586b-5b2c-464b-93d8-a713efe633c4
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    614fa08031a63e362508fc74a8acc629: !StrideMountainGoap.Code.NPC.Actions.GetWoodAction,StrideMountainGoap
+                        Id: 8636ca1f-2ba7-45d3-9da0-f5e1b3060169
+                        NameOfAction: GetWoodAction
+                        Cost: 1
+                        Preconditions:
+                            08c79901096fe502168a4e72de4eea71~HasAxe: true
+                            60b3d99d6dce0512767fb393aa2146dd~IsCloseToTarget: true
+                        Postconditions:
+                            887af823eea639ed3bb4176c2b7c247b~IsCloseToTarget: false
+                            75498d5331cf2abb27e36cc438423331~HasWood: true
+                        TargetTree: ref!! f3d0a0e4-4c3d-4b84-b166-338499b83e30
+                        Move: ref!! a4c34c8c-a48f-4f32-a299-f9bac07bb7ad
+        -   Entity:
+                Id: 7f6fbbd1-1748-4327-aa81-fd6b99bfe609
+                Name: NPC
+                Components:
+                    6b211ddb37496e2fcd0146fdb5a3cee4: !TransformComponent
+                        Id: 4dbd0a0c-b994-4b14-a42b-e4d9fb179170
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            09d2e1c41c6f062d5d77db3b5a668b91: ref!! 1dd47d87-3022-4278-817f-4fffcd0f3dd5
+                            e392555e8c799ff51354f1294ca98a60: ref!! e56812aa-0d68-45ff-976d-66d7cb5b5962
+                            e8e1d1443747aaf950ea5c453c9d566c: ref!! a5247651-72f5-47e6-8c01-349c30e31fed
+                            d56ecb2da02fcf6ba2c0b24e0cca21f3: ref!! b48e1fa7-9c79-4bb2-8c2a-943d16c6c0c4
+                            ccf18a06f5d0f10164bc37747900d0e4: ref!! c4ad586b-5b2c-464b-93d8-a713efe633c4
+                    ac0466a832bc713aa35a5676ac305256: !StrideMountainGoap.Code.NPC.NPCAgent,StrideMountainGoap
+                        Id: 3f2dd9f0-5f8d-4f2f-aa23-486bda8dd0ef
+                        AgentName: NPC
+                        GoapActions:
+                            5607385529e39ebf2cde0bed0c0e71a3: !StrideMountainGoap.Code.NPC.MoveToAction,StrideMountainGoap ref!! a4c34c8c-a48f-4f32-a299-f9bac07bb7ad
+                            9af5187e5321da00584b851fadf4483e: !StrideMountainGoap.Code.NPC.Actions.GetAxeAction,StrideMountainGoap ref!! c3e79ffb-6cc4-4a32-aa16-3e3b6ec36dfd
+                            fc22f46fea8e6b0e427faadc98297ff2: !StrideMountainGoap.Code.NPC.Actions.GetWoodAction,StrideMountainGoap ref!! 8636ca1f-2ba7-45d3-9da0-f5e1b3060169
+                        GoapGoals:
+                            a93b1212e2fae53b044ef21a90bbad47: !StrideMountainGoap.Code.NPC.NPCGoal,StrideMountainGoap ref!! 2d305f89-47dc-4e36-8bce-b3ce7d872c57
+                        CurrentState:
+                            0e873a2b697c53fe1a0c67d69bdb28b6~IsCloseToTarget: false
+                            59a0bcec22939ade2324a41eb3d6edc9~HasAxe: false
+                            24d89713726cffd6fa11815a4c9b8c74~HasWood: false
+                    e2436f0bddd4b24e65da399fb1a4c43e: !Navigation.AsyncPathfinder,StrideMountainGoap
+                        Id: 44bb202f-1f58-479b-93e5-a40f44a5a4d8
+                        Priority: 10
+                        TargetPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+                        MovementSpeed: 3.0
+                        NavGroupName: NPC
+        -   Entity:
+                Id: 7fbc3ba7-a35c-4e58-ac20-8381333ef140
+                Name: Navigation bounding box
+                Components:
+                    90aa5e1cb9d3f263cc3649b9d9afb841: !TransformComponent
+                        Id: df814fe0-f61f-4b06-b5b4-6fcec7a2fc67
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b2e44ee9311f72e793f0f6b9c8df73d2: !Stride.Navigation.NavigationBoundingBoxComponent,Stride.Navigation
+                        Id: bb9dabdd-12f8-4aae-92f5-06822b8e757e
+                        Size: {X: 20.0, Y: 5.0, Z: 20.0}
+        -   Entity:
+                Id: 8b10ae16-8d45-4cb0-bfc6-19cabb326367
+                Name: TargetTest
+                Components:
+                    7473c20c1c8426a9231e65b31d6234bb: !TransformComponent
+                        Id: 6078afaf-50e3-41f4-81a3-6c71b53f9f04
+                        Position: {X: -10.4994545, Y: 0.0, Z: -13.6806135}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+        -   Folder: Actions
+            Entity:
+                Id: 92d9cb16-d724-43be-b749-bd47bc01c8ce
+                Name: MoveAction
+                Components:
+                    bb85b0a4d63fb515ef19e0dc3fc784bc: !TransformComponent
+                        Id: a5247651-72f5-47e6-8c01-349c30e31fed
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    95235495ef3954f1c655fc7a2ef0547e: !StrideMountainGoap.Code.NPC.MoveToAction,StrideMountainGoap
+                        Id: a4c34c8c-a48f-4f32-a299-f9bac07bb7ad
+                        NameOfAction: MoveToAction
+                        Cost: 1
+                        Preconditions:
+                            ad677687ebe993bdf39de7288fbf9dac~IsCloseToTarget: false
+                        Postconditions:
+                            11856950a2f695f51ff57f0f7da2dd17~IsCloseToTarget: true
+                        PathFinder: ref!! 44bb202f-1f58-479b-93e5-a40f44a5a4d8
+                        Target: ref!! 7f6fbbd1-1748-4327-aa81-fd6b99bfe609
+                        DistanceToREachTarget: 0.5
+        -   Entity:
+                Id: a6542201-b452-4b6f-9340-5a70fda4f87d
+                Name: Directional light
+                Components:
+                    f3d1b6d635acaf3e4733633185fd8700: !TransformComponent
+                        Id: a41ce7d1-d61d-462c-8c42-19cbcedb4a8e
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.25881904, W: -4.222196E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2795063640f9575d839ff9b53d8db125: !LightComponent
+                        Id: a8eba6df-7ab5-40aa-82d6-56bce49fa062
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 20.0
+        -   Entity:
+                Id: ab95d84b-a81f-4191-b440-be3495b2af9d
+                Name: Goals
+                Components:
+                    c711cb48c01e68bc666fcbaea29707b6: !TransformComponent
+                        Id: 1dd47d87-3022-4278-817f-4fffcd0f3dd5
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    66e11915b73ef92c2b468bdcf090ada6: !StrideMountainGoap.Code.NPC.NPCGoal,StrideMountainGoap
+                        Id: 2d305f89-47dc-4e36-8bce-b3ce7d872c57
+                        GoalName: Move To Target
+                        Weight: 1
+                        DesiredGoals:
+                            abd9ce601ee35fd620f64362201f2bd3~HasWood: true
+        -   Entity:
+                Id: b5930139-f098-4151-ba28-d30e6e3faed2
+                Name: AxeLocation
+                Components:
+                    c39de82a8cd7dec370b2853f7a0717e5: !TransformComponent
+                        Id: 8b4b6dbe-a84d-4fef-a98d-2dfe5c10d723
+                        Position: {X: -11.331519, Y: 0.4648546, Z: 13.173044}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3049b25cef3622e4ccd19f8b0006bd98: !ModelComponent
+                        Id: 794cf5f9-45ce-4260-84ce-aa637cb41e0f
+                        Model: 50ed78b5-56c5-42c5-a3dd-f37500df8363:Cube
+                        Materials: {}
+        -   Entity:
+                Id: c6564ee3-f810-4c0c-b2f8-2438d63481ae
+                Name: Tree
+                Components:
+                    e9badc6c39fbdb7be5c5903642426dc9: !TransformComponent
+                        Id: 34fc2e19-4650-4166-bb72-2ebeeb6c33a3
+                        Position: {X: 12.216557, Y: 0.0, Z: 12.285085}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            2cf9a01a7717413bdba05b4146a4a551: ref!! eb701db8-393e-40a2-a997-a59045a17fd8
+                    867f8caee45c01005a751dbdd9f951d0: !StrideMountainGoap.Code.Tree,StrideMountainGoap
+                        Id: f3d0a0e4-4c3d-4b84-b166-338499b83e30
+                        GatherableAmount: 5
+        -   Entity:
+                Id: f725321c-08e9-4c83-bf57-0da678b5f26f
+                Name: Ground
+                Components:
+                    cad8d13234054d9758d732fff3210ade: !TransformComponent
+                        Id: 6a928087-56d0-4530-8ac9-e3cb1c71eb1f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 4.0, Y: 1.0, Z: 4.0}
+                        Children: {}
+                    37bd978e96b4d38f8755342915896d64: !ModelComponent
+                        Id: 9f7f8e85-bd92-45ff-ade8-3779b84c5720
+                        Model: 1c74c01f-a3da-4057-a959-068c011d70a0:Ground
+                        Materials: {}
+                    82ef16d41f4aaf0da839505cf0b9a3cf: !StaticColliderComponent
+                        Id: 2a1c70bb-44ad-435f-82a2-ff6ba5ceb8f9
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            72accc9d87aca34f31bd040a1b0ce4b2: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 10.0, Y: 0.01, Z: 10.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
